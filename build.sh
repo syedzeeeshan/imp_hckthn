@@ -2,11 +2,11 @@
 # exit on error
 set -o errexit
 
-# Upgrade pip and essential build tools
+# 1. Upgrade pip and essential build tools
 pip install --upgrade pip setuptools wheel
 
-# Install your project dependencies
+# 2. Install your project dependencies
 pip install -r requirements.txt
 
-# Run database migrations (for Django)
+# 3. Run database migrations (for Django)
 python manage.py migrate
